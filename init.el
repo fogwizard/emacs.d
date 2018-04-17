@@ -1,3 +1,6 @@
+
+
+
 (add-to-list 'load-path (expand-file-name "lisp" user-emacs-directory))
 
 (defconst *spell-check-support-enabled* nil) ;; Enable with t if you prefer
@@ -9,6 +12,19 @@
 (setq custom-file (expand-file-name "custom.el" user-emacs-directory))
 ;; (require 'init-compat)
 (require 'init-utils)
+;;(require 'window-numbering)
+;;(window-numbering-mode 1)
+
+(global-linum-mode t)
+
+(recentf-mode 1)
+(setq recentf-max-menu-items 25)
+(global-set-key "\C-x\ \C-r" 'recentf-open-files)
+
+(winner-mode 1)
+;; copied from http://puntoblogspot.blogspot.com/2011/05/undo-layouts-in-emacs.html
+(global-set-key (kbd "C-x 4 u") 'winner-undo)
+(global-set-key (kbd "C-x 4 r") 'winner-redo)
 
 ;; Needed for Emacs version < 24. must come before elpa, as it may provide package.el
 ;; (require 'init-site-lisp)
@@ -41,7 +57,7 @@
 ;; (require 'init-osx-keys)
 ;; (require 'init-gui-frames)
 ;; (require 'init-proxies)
-(require 'init-dired)
+;;(require 'init-dired)
 ;; (require 'init-isearch)
 ;; (require 'init-uniquify)
 ;; (require 'init-ibuffer)

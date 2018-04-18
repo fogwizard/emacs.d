@@ -1,0 +1,6 @@
+[submodule "ggtags"]
+	path = ggtags
+	url = https://github.com/leoliu/ggtags.git
+[submodule "gtags"]
+	path = gtags
+	url = https://github.com/voins/gtags.git

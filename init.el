@@ -1,6 +1,13 @@
 
 
 
+
+;; Added by Package.el.  This must come before configurations of
+;; installed packages.  Don't delete this line.  If you don't want it,
+;; just comment it out by adding a semicolon to the start of the line.
+;; You may delete these explanatory comments.
+(package-initialize)
+
 (add-to-list 'load-path (expand-file-name "lisp" user-emacs-directory))
 
 (defconst *spell-check-support-enabled* nil) ;; Enable with t if you prefer
@@ -16,6 +23,15 @@
 ;;(window-numbering-mode 1)
 
 (global-linum-mode t)
+
+;;(load "/home/fog/.emacs.d/gtags/gtags.el")
+(load "/home/fog/.emacs.d/etags/etags-select.el")
+;;(autoload 'gtags-mode "gtags" "" t) ;gtags-mode is true
+;;(global-set-key (kbd "M-.") 'gtags-find-tag)
+;;(global-set-key (kbd "M-,") 'gtags-find-rtag)
+;;(global-set-key (kbd "M-g M-f") 'gtags-find-file)
+;;(global-set-key (kbd "M-g M-s") 'gtags-find-symbol)
+;;(global-set-key (kbd "M-g M-u") 'gtags-update)
 
 (recentf-mode 1)
 (setq recentf-max-menu-items 25)

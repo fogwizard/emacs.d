@@ -91,7 +91,7 @@
 (require 'init-tabbar)
 (require 'init-editing-utils)
 (require 'init-evil)
-(require 'init-matlab)
+;;(require 'init-matlab)
 
 ;; (require 'init-vc)
 ;; (require 'init-darcs)
@@ -99,7 +99,7 @@
 
 ;; (require 'init-crontab)
 ;; (require 'init-textile)
-(require 'init-markdown)
+;;(require 'init-markdown)
 (require 'init-auctex)
 ;; (require 'init-csv)
 ;; (require 'init-erlang)
@@ -142,7 +142,7 @@
 ;;   (require-package 'osx-location))
 ;; (require-package 'regex-tool)
 
-(require 'init-themes)
+;; (require 'init-themes)
 ;; ;;----------------------------------------------------------------------------
 ;; ;; Allow access from emacsclient
 ;; ;;----------------------------------------------------------------------------

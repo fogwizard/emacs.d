@@ -31,10 +31,13 @@
                `("gnu" . ,(add-address-prefix "elpa.gnu.org/packages/"))))
 
 ;;; Also use Melpa for most packages
-(add-to-list 'package-archives
-             `("melpa" . ,(add-address-prefix "melpa.org/packages/")))
-(add-to-list 'package-archives
-             `("melpa-stable" . ,(add-address-prefix "stable.melpa.org/packages/")))
+;;(add-to-list 'package-archives
+;;             `("melpa" . ,(add-address-prefix "melpa.org/packages/")))
+;;(add-to-list 'package-archives
+;;             `("melpa-stable" . ,(add-address-prefix "stable.melpa.org/packages/")))
+
+(setq package-archives '(("gnu"   . "http://mirrors.tuna.tsinghua.edu.cn/elpa/gnu/")
+                         ("melpa" . "http://mirrors.tuna.tsinghua.edu.cn/elpa/melpa/")))
 
 
 ;; If gpg cannot be found, signature checking will fail, so we

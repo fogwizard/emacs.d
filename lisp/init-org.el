@@ -1,4 +1,4 @@
-(require-package 'org-fstree)
+;;(require-package 'org-fstree)
 (require-package 'orgit)
 (require-package 'toc-org)
 

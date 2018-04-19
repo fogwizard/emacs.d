@@ -25,7 +25,8 @@
 (global-linum-mode t)
 
 ;;(load "/home/fog/.emacs.d/gtags/gtags.el")
-(load "/home/fog/.emacs.d/etags/etags-select.el")
+(load "~/.emacs.d/etags/etags-select.el")
+(load "~/.emacs.d/custom/copy.el")
 ;;(autoload 'gtags-mode "gtags" "" t) ;gtags-mode is true
 ;;(global-set-key (kbd "M-.") 'gtags-find-tag)
 ;;(global-set-key (kbd "M-,") 'gtags-find-rtag)
